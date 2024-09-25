@@ -19,3 +19,9 @@ bts7960 motorDriver(L_EN, R_EN, L_PWM, R_PWM);
 Or three pins constructor, in case you use the same pin for both left and right enable pins:
 ```cpp
 bts7960 motorDriver(EN, L_PWM, R_PWM);
+```
+Then you enable the rotation in the void setup():
+```cpp
+motorDriver.enableOutputs();
+```
+and in the main loop() you set up the your desired movemnts
