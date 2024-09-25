@@ -15,7 +15,7 @@ To use this library, include the header file in your Arduino sketch
 Then create an instance of the BTS7960 with four pins constructor:
 ```cpp
 bts7960 motorDriver(L_EN, R_EN, L_PWM, R_PWM);
-
+```
 Or three pins constructor, in case you use the same pin for both left and right enable pins:
 ```cpp
 bts7960 motorDriver(EN, L_PWM, R_PWM);
